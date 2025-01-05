@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه امگا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #FFD54F;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #FFD54F;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px #555;
+        }
+        header:before, header:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: repeating-linear-gradient(90deg, #FFD54F, #FFD54F 10px, #000 10px, #000 20px);
+            left: 0;
+        }
+        header:before {
+            top: 0;
+        }
+        header:after {
+            bottom: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #FFD54F;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FFD54F;
+            color: black;
+        }
+        .slideshow {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            border: 5px solid #FFD54F;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+        .slideshow img:hover {
+            transform: scale(1.1);
+        }
+        .lightning {
+            position: absolute;
+            width: 3px;
+            height: 100px;
+            background: linear-gradient(to bottom, yellow, transparent);
+            animation: flicker 0.1s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+        .about {
+            padding: 20px;
+            text-align: center;
+            background-color: #111;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about h2 {
+            color: #FFD54F;
+            text-shadow: 1px 1px 3px #333;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #222;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product {
+            text-align: center;
+            width: 30%;
+            background-color: #333;
+            padding: 10px;
+            border: 2px solid #FFD54F;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product h3 {
+            color: #FFD54F;
+        }
+        .product:hover {
+            border-color: #FFECB3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #FFD54F;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer .map {
+            margin-top: 10px;
+        }
+        footer iframe {
+            border: 2px solid #333;
+        }
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: repeating-linear-gradient(90deg, #FFD54F, #FFD54F 10px, #000 10px, #000 20px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>فروشگاه امگا</h1>
+        <div class="lightning" style="top: 10px; left: 50%;"></div>
+    </header>
+    <nav>
+        <a href="#products">محصولات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+    <div class="slideshow">
+        <img src="DALL·E 2024-12-31 22.34.04 - A horizontal logo for an electric and electronic store named 'Omega' designed in a sleek and modern style. The logo features a bold, futuristic font f.png" alt="تصویر محصول الکتریکی 1">
+
+        <img src="DALL·E 2024-12-31 22.56.33 - A wide image showcasing various electrical devices, including light bulbs, a power plug, wires, batteries, a circuit board, and a smartphone charger.png" alt="تصویر محصول الکتریکی 2">
+        <div class="lightning" style="top: 10px; left: 20%;"></div>
+    </div>
+    <section id="about" class="about">
+        <h2>درباره فروشگاه امگا</h2>
+        <p>فروشگاه امگا با ارائه بهترین محصولات الکتریکی، همواره در تلاش است تا نیازهای مشتریان خود را به بهترین شکل ممکن برآورده کند.</p>
+    </section>
+    <section id="products" class="products">
+        <div class="product">
+            <img src="280x280.png" alt="تصویر محصول الکتریکی 1">
+            <p>لامپ 12 وات بروکس 
+                قیمت : 40000 تومان
+            </p>
+        </div>
+        <div class="product">
+            <h3>محصول ۲</h3>
+            <p>توضیحات محصول ۲</p>
+        </div>
+        <div class="product">
+            <h3>محصول ۳</h3>
+            <p>توضیحات محصول ۳</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>تماس با ما: ۰۱۲۳۴۵۶۷۸۹</p>
+        <p>آدرس: خیابان مثال، شهر مثال</p>
+        <div class="map">
+            <p>موقعیت فروشگاه:</p>
+            <iframe src="https://www.google.com/maps/embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
